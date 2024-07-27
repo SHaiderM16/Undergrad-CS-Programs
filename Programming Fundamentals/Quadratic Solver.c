@@ -2,12 +2,12 @@
 #include <math.h>
 int main()
 {
-	int a, b, c, BracketTerm;
-	float SqrtTerm, Root1, Root2;
-	printf("As part of quadratic equation, enter term a: ");
-	scanf("%d", &a);
-	printf("Enter term b: ");
-	scanf("%d", &b);
+    int a, b, c, BracketTerm;
+    float SqrtTerm, Root1, Root2;
+    printf("As part of quadratic equation, enter term a: ");
+    scanf("%d", &a);
+    printf("Enter term b: ");
+    scanf("%d", &b);
     printf("Enter term c: ");
     scanf("%d", &c);
     BracketTerm = (b*b) - (4*a*c);
