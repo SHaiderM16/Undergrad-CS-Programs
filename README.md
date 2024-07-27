@@ -19,6 +19,6 @@ This repository contains programming assignments from my undergraduate Computer 
 
 ## Contact
 
-For questions, email me at [haidermurtaza16@gmail.com](mailto:haidermurtaza16@gmail.com).
+For questions, email me at [haidermurtaza16@gmail.com](mailto:haidermurtaza16@gmail.com)
 
 Connect with me on LinkedIn: [www.linkedin.com/in/haidercs](https://www.linkedin.com/in/haidercs)
