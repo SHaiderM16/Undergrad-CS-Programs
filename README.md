@@ -1,12 +1,12 @@
 # Programming Assignments
 
-This repository contains programming assignments from my undergraduate Computer Science studies. These assignments showcase my growth as a programmer and cover fundamental programming skills, object-oriented programming (OOP), data structures, and assembly language concepts.
+This repository contains programming assignments from my undergraduate Computer Science studies. These assignments showcase my growth as a programmer and cover fundamental programming skills, object-oriented programming (OOP), data structures and algorithms, and assembly language concepts.
 
 ## Contents
 
 - **Programming Fundamentals**: Algorithms, file handling, and memory management.
 - **Object-Oriented Programming (OOP)**: Classes, objects, inheritance, polymorphism, encapsulation, and abstraction.
-- **Data Structures**: Linear and non-linear data structures, including arrays, linked lists, stacks, queues, trees, and graphs.
+- **Data Structures and Algorithms**: Linear and non-linear data structures (arrays, linked lists, stacks, queues, trees, graphs), sorting algorithms, and search techniques.
 - **Computer Organization and Assembly Language**: Assembly-level programming concepts, including arithmetic operations, memory management, and system-level interactions.
 
 ## Getting Started
