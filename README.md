@@ -6,15 +6,17 @@ This repository contains programming assignments from my undergraduate Computer 
 
 - **Programming Fundamentals**: Algorithms, file handling, and memory management.
 - **Object-Oriented Programming (OOP)**: Classes, objects, inheritance, polymorphism, encapsulation, and abstraction.
-- **Data Structures and Algorithms**: Linear and non-linear data structures (arrays, linked lists, stacks, queues, trees, graphs), sorting algorithms, and search techniques.
-- **Computer Organization and Assembly Language**: Assembly-level programming concepts, including arithmetic operations, memory management, and system-level interactions.
+- **Data Structures and Algorithms (DSA)**: 
+  - **Data Structures**: Arrays, linked lists, stacks, queues, trees (AVL Tree, Binary Search Tree), heaps, graphs, and hashing.
+  - **Algorithms**: Searching (linear, binary, string searching), sorting (e.g., bubble sort), and other algorithmic techniques.
+- **Computer Organization and Assembly Language**: Programs demonstrating low-level concepts such as arithmetic operations, recursive procedures, array manipulation, string processing, and pattern generation, using the Irvine32 library.
 
 ## Getting Started
 
 1. Clone this repository with:
 
     ```bash
-    git clone https://github.com/yourusername/your-repository.git
+    git clone https://github.com/SHaiderM16/Undergrad-CS-Programs.git
     ```
 
 2. Browse the folders to explore the assignments.
