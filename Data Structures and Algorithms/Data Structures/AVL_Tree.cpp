@@ -37,7 +37,7 @@ public:
         return height(node->left) - height(node->right);
     }
 
-    // x = l = left, y = r = right
+    // l = left, r = right
     Node *rightRotate(Node *r)
     {
         Node *l = r->left;
@@ -59,8 +59,7 @@ public:
 
         return l;
     }
-
-    // x = l = left, y = r = right
+    // l = left, r = right
     Node *leftRotate(Node *l)
     {
         Node *r = l->right;
@@ -82,6 +81,7 @@ public:
 
         return r;
     }
+
     void insert(int key)
     {
         root = insert(root, key);
