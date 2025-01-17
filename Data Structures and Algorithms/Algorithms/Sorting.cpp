@@ -59,10 +59,7 @@ void selectionSortMin(int array[], int size)
             }
         }
 
-        // Swapping array[min] and array[i]
-        int temp = array[min];
-        array[min] = array[i];
-        array[i] = temp;
+        swap(array[min], array[i]);
     }
 }
 
@@ -81,10 +78,7 @@ void selectionSortMax(int array[], int size)
             }
         }
 
-        // Swapping array[max] and array[i]
-        int temp = array[max];
-        array[max] = array[i];
-        array[i] = temp;
+        swap(array[max], array[i]);
     }
 }
 
