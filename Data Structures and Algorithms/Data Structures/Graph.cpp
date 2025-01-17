@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-struct GraphLLNode
+struct GraphLinkedListNode
 {
     int data;
-    GraphLLNode *next;
+    GraphLinkedListNode *next;
 
-    GraphLLNode(int d)
+    GraphLinkedListNode(int d)
     {
         data = d;
         next = NULL;
@@ -16,7 +16,7 @@ struct GraphLLNode
 class Graph
 {
     int V, E;
-    GraphLLNode **adjList;
+    GraphLinkedListNode **adjList;
     int **adjMatrix;
 
 public:
@@ -26,7 +26,7 @@ public:
         this->E = E;
 
         // setting up adjList
-        adjList = new GraphLLNode *[V];
+        adjList = new GraphLinkedListNode *[V];
         for (int i = 0; i < V; ++i)
         {
             adjList[i] = nullptr; // Initialize each adjacency list pointer to nullptr
@@ -48,16 +48,16 @@ public:
 
         // adding into adjList
         // adding U
-        GraphLLNode *newNodeU = new GraphLLNode(u);
+        GraphLinkedListNode *newNodeU = new GraphLinkedListNode(u);
         newNodeU->next = adjList[v];
         adjList[v] = newNodeU;
         // adding V
-        GraphLLNode *newNodeV = new GraphLLNode(v);
+        GraphLinkedListNode *newNodeV = new GraphLinkedListNode(v);
         newNodeV->next = adjList[u];
         adjList[u] = newNodeV;
     }
 
-    void bfsUsingMatrix(int src)
+    void matrixBFS(int src)
     {
         // Create a visited array to track visited nodes
         int *vis = new int[V]();
@@ -91,7 +91,7 @@ public:
         }
     }
 
-    void bfsUsingList(int src)
+    void LinkedListBFS(int src)
     {
         // Create a visited array to track visited nodes
         int *vis = new int[V]();
@@ -112,7 +112,7 @@ public:
             cout << parent << " ";
 
             // Traverse all neighbours in the adjacency list
-            GraphLLNode *temp = adjList[parent];
+            GraphLinkedListNode *temp = adjList[parent];
             while (temp != NULL)
             {
                 if (vis[temp->data] == 0) // Check for unvisited neighbours
@@ -127,7 +127,7 @@ public:
         }
     }
 
-    void dfsUsingMatrix(int src, int *vis)
+    void MatrixDFS(int src, int *vis)
     {
         // If the node is already visited, return
         if (vis[src] == 1)
@@ -143,12 +143,12 @@ public:
         {
             if (adjMatrix[src][i] == 1)
             {
-                dfsUsingMatrix(i, vis);
+                MatrixDFS(i, vis);
             }
         }
     }
 
-    void dfsUsingList(int src, int *vis)
+    void LinkedListDFS(int src, int *vis)
     {
         // If the node is already visited, return
         if (vis[src] == 1)
@@ -159,10 +159,10 @@ public:
         vis[src] = 1;
         cout << src << " ";
         // Traverse neighbours in the adjacency list and visit them recursively
-        GraphLLNode *temp = adjList[src];
+        GraphLinkedListNode *temp = adjList[src];
         while (temp != NULL)
         {
-            dfsUsingList(temp->data, vis);
+            LinkedListDFS(temp->data, vis);
             temp = temp->next; // Move to the next neighbour
         }
     }
