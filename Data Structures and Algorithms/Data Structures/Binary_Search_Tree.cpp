@@ -105,35 +105,6 @@ public:
         return node;
     }
 
-    Node *ceil(Node *node, int key)
-    {
-        if (node == NULL)
-        {
-            return node;
-        }
-
-        if (node->key < key)
-        {
-            return ceil(node->right, key);
-        }
-
-        Node *leftCeil = ceil(node->left, key);
-        return ((leftCeil != NULL) ? leftCeil : node);
-    }
-    Node *floor(Node *node, int key)
-    {
-        if (node == NULL)
-        {
-            return node;
-        }
-        if (node->key > key)
-        {
-            return floor(node->left, key);
-        }
-        Node *rightFloor = floor(node->right, key);
-        return ((rightFloor != NULL) ? rightFloor : node);
-    }
-
     Node *search(Node *node, int key)
     {
         if (node == NULL)
