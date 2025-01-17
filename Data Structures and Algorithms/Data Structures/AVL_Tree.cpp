@@ -54,8 +54,8 @@ public:
         // Rotation
         l->right = r;
         r->left = temp;
-        r->height = getMax(getHeight(r->left), getHeight(r->right)) + 1;
-        l->height = getMax(getHeight(l->left), getHeight(l->right)) + 1;
+        r->height = max(r->left->height, r->right->height) + 1;
+        l->height = max(l->left->height, l->right->height) + 1;
 
         return l;
     }
@@ -76,8 +76,8 @@ public:
         // Rotation
         r->left = l;
         l->right = temp;
-        r->height = getMax(getHeight(r->left), getHeight(r->right)) + 1;
-        l->height = getMax(getHeight(l->left), getHeight(l->right)) + 1;
+        r->height = max(r->left->height, r->right->height) + 1;
+        l->height = max(l->left->height, l->right->height) + 1;
 
         return r;
     }
